@@ -213,7 +213,7 @@
                 <p>3. The block descends slowly over time, increasing in speed as you level up.</p>
                 <p>4. Avoid letting the block touch the white boundary line at the bottom.</p>
                 <p>5. The game ends if the block touches the boundary line.</p>
-                <p>6. Your score is based on the number of correct words typed.</p>
+                <p>6. Your score is based on the number of correct characters typed.</p>
                 <p>7. Your typing speed (WPM) and accuracy will be displayed at the end.</p>
                 <p>8. Backspace is not allowed and will be ignored.</p>
                 <p>9. Good luck and have fun!</p>
@@ -255,7 +255,8 @@
             "Our Hemant took really great sessions on web development.",
             "IIT Patna soon will be the best IIT in India.",
             "Full form of NJACK is Nerds Jointly Addressing Computer Knowledge.",
-            "Our another subcoord Rishi got bronze in India Skills 2023.",
+            "Our another subcoord Rishi got bronze in India Skills 2024.",
+            "I will give you a pastry treat in Nescafe if you continue playing this for 2 minutes with accuracy greater than 95 percent.",
         ];
         let currentSentence = "";
         let blockSpeed = 1;
@@ -302,7 +303,7 @@
 
         function calculateWPM() {
             const elapsedTime = (Date.now() - startTime) / 1000 / 60;
-            return (correctTyped / 5) / elapsedTime;
+            return (totalTyped / 5) / elapsedTime;
         }
 
         function calculateAccuracy() {
